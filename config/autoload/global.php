@@ -13,5 +13,13 @@
  */
 
 return [
-    // ...
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn'    => 'mysql:host=mysql;dbname=albums',
+        'driver_options' => [
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+        ],
+        'username' => 'root',
+        'password' => 'root',
+    ],
 ];
